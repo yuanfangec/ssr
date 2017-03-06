@@ -14,7 +14,7 @@ CopyrightLogo='
 							  
 		           ShadowSocks多用户管理系统
 
-		           采用SSR+ss-panel流控管理系统					                  	
+		           采用SSR+ss-panel管理系统					                  	
 ==========================================================================';
 echo "$CopyrightLogo";
 # FILES  ******************************************************************
@@ -25,8 +25,6 @@ Froms=$2;
 MirrorHost='github.com/yuanfangec/ssr/raw';
 IPAddress=`wget http://members.3322.org/dyndns/getip -O - -q ; echo`;
 #==========================================================================
-echo
-echo "脚本支持centos6.x 系统(如遇到卡住，请耐心等待5-7分钟)"
 echo
 function InputIPAddress()
 {
