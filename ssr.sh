@@ -26,6 +26,8 @@ MirrorHost='github.com/yuanfangec/ssr/raw';
 IPAddress=`wget http://members.3322.org/dyndns/getip -O - -q ; echo`;
 #==========================================================================
 echo
+echo "脚本支持centos6.x 系统(如遇到卡住，请耐心等待5-7分钟)"
+echo
 function InputIPAddress()
 {
 	if [ "$IPAddress" == '' ]; then
