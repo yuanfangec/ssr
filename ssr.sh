@@ -12,11 +12,9 @@ CopyrightLogo='
 ==========================================================================
 				     欢迎使用
 							  
-		           ShadowSocks多用户管理系统v2版
+		           ShadowSocks多用户管理系统
 
-		           采用SSR+ss-panel2流控管理系统
-
-			                               All Rights Reserved							                  	
+		           采用SSR+ss-panel流控管理系统					                  	
 ==========================================================================';
 echo "$CopyrightLogo";
 # FILES  ******************************************************************
@@ -29,22 +27,6 @@ IPAddress=`wget http://members.3322.org/dyndns/getip -O - -q ; echo`;
 #==========================================================================
 echo 
 echo "脚本支持centos6.x 系统(如遇到卡住，请耐心等待5-7分钟)"
-if [ "1" = "1" ] ;then
-	echo 
-	echo 授权成功！[本机IP：$IPAddress]
-    else
-	echo
-	echo "授权失败！"
-OPW='
-==========================================================================
-			     服务授权失败，安装被终止
- 
-			ShadowSocks多用户管理系统安装失败
-			
-			      All Rights Reserved		
-==========================================================================';
-echo "$OPW";
-exit 0;
 fi
 echo
 function InputIPAddress()
@@ -103,8 +85,6 @@ CO='
 			安装被终止,请在Centos 6 系统上执行操作
  
 			ShadowSocks多用户管理系统安装失败 
-			
-				All Rights Reserved	
 ==========================================================================';
 version=`lsb_release -a | grep -e Release|awk -F ":" '{ print $2 }'|awk -F "." '{ print $1 }'`
 if [ $version == "6" ];then
@@ -263,9 +243,7 @@ echo
 echo 您的IP是：$IPAddress 
 Client='
 ==========================================================================
-			ShadowSocks多用户管理系统安装完毕				
-			   
-			            All Rights Reserved		    								     							    
+			ShadowSocks多用户管理系统安装完毕					    								     							    
 ==========================================================================';
 echo "$Client";
 exit 0;
